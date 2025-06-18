@@ -10,8 +10,11 @@ type ButtonProps = {
 
 export default function Button(props: ButtonProps) {
   return (
-    <button onClick={props.onHandleFunc} className={styles[props.color]}>
-      {props.children}
+    <button
+      onClick={props.onHandleFunc}
+      className={`${styles[props.color]} ${styles.button}`}
+    >
+      <p>{props.children}</p>
     </button>
   );
 }

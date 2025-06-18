@@ -18,16 +18,18 @@ export default function CounterBox() {
 
   return (
     <div className={styles.box}>
-      <h1>{counter}</h1>
-      <Button onHandleFunc={handlePlusCounter} color="green">
-        Plus
-      </Button>
-      <Button onHandleFunc={handleMinusCounter} color="red">
-        Minus
-      </Button>
-      <Button onHandleFunc={handleReset} color="grey">
-        Reset
-      </Button>
+      <h1 className={styles.h1}>{counter}</h1>
+      <div className={styles.buttonsBox}>
+        <Button onHandleFunc={handlePlusCounter} color="green">
+          Plus
+        </Button>
+        <Button onHandleFunc={handleMinusCounter} color="red">
+          Minus
+        </Button>
+        <Button onHandleFunc={handleReset} color="grey">
+          Reset
+        </Button>
+      </div>
     </div>
   );
 }
