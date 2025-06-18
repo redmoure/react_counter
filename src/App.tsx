@@ -1,8 +1,9 @@
 import CounterBox from './components/CounterBox';
+import styles from './App.module.css';
 
 export default function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <CounterBox />
     </div>
   );
