@@ -19,9 +19,15 @@ export default function CounterBox() {
   return (
     <div className={styles.box}>
       <h1>{counter}</h1>
-      <Button onHandleFunc={handlePlusCounter}>Plus</Button>
-      <Button onHandleFunc={handleMinusCounter}>Minus</Button>
-      <Button onHandleFunc={handleReset}>Reset</Button>
+      <Button onHandleFunc={handlePlusCounter} color="green">
+        Plus
+      </Button>
+      <Button onHandleFunc={handleMinusCounter} color="red">
+        Minus
+      </Button>
+      <Button onHandleFunc={handleReset} color="grey">
+        Reset
+      </Button>
     </div>
   );
 }
